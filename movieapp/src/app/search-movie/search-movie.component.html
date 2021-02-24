@@ -1,0 +1,16 @@
+<p>search-movie works!</p>
+<input id="search"
+(keyup)="onKeyUp($event, '')"
+(keydown)="onKeyDown($event)"
+(keypress)="onKeyPress($event)"
+placeholder="Search for a movie..."/>
+
+<button (click)="searchMovie()">Submit</button>
+
+<div id="results">
+  <ng-container *ngIf="movies">
+    <div *ngFor="let movie of movies">
+      <button [routerLink]="['/detail', movie.imdbID]">{{ movie.Title }} </button>
+    </div>
+  </ng-container>
+</div>
