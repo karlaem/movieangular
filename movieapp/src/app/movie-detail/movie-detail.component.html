@@ -1,11 +1,12 @@
-<p>movie-detail works!</p>
-
-<div *ngIf="movie_detail">
+<div class="containerdetail" *ngIf="movie_detail">
+  <h1>{{movie_detail.Title}}</h1>
   <img style="width:100px"
   src={{movie_detail.Poster}} />
-  <h1>{{movie_detail.Title}}</h1>
   <p>
     {{movie_detail.Plot}}
+  </p>
+  <p> Actors:
+    {{movie_detail.Actors}}
   </p>
 </div>
 

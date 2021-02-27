@@ -1,3 +1,29 @@
-footer{
-  border:1px solid dodgerblue;
+*{
+  font-family: 'Roboto', sans-serif;
 }
+h1{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+footer button{
+  margin: 0 auto;
+}
+.btnhome{
+  border: none;
+  padding: 3px 15px;
+  border-radius:5px;
+  letter-spacing: 1px;
+  margin: 0px;
+  background-color: ghostwhite;
+}
+.btnhome:hover{
+  background-color: red;
+  color: white;
+}
+

@@ -1,0 +1,63 @@
+.margins{
+  width: 90%;
+  margin: 0 auto;
+}
+.field{
+  position: relative;
+}
+.btn{
+  border: none;
+  padding: 3px 15px;
+  border-radius:5px;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  margin: 0px;
+  background-color: ghostwhite;
+}
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+.search{
+  background-color: ghostwhite;
+  color: black;
+  border:none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.search:focus{
+  border: solid 1px red;
+}
+.movieresults{
+  padding: 20px;
+}
+.cards{
+  background-color: ghostwhite;
+  display: flex;
+  width: 25%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+.cards a{
+  margin: 0 auto;
+
+}
+.cards img{
+  margin: 0 auto;
+  cursor: pointer;
+}
+.cards .btncard{
+  background-color: ghostwhite;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+

@@ -1,16 +1,24 @@
-<p>search-movie works!</p>
-<input id="search"
-(keyup)="onKeyUp($event, '')"
-(keydown)="onKeyDown($event)"
-(keypress)="onKeyPress($event)"
-placeholder="Search for a movie..."/>
+<div class="margins">
+  <div class="field">
+  <input class="search" id="search"
+  (keyup)="onKeyUp($event, '')"
+  (keydown)="onKeyDown($event)"
+  (keypress)="onKeyPress($event)"
+  placeholder="Search for a movie..."/>
 
-<button (click)="searchMovie()">Submit</button>
+  <button class="btn" (click)="searchMovie()">Search</button>
+  </div>
 
-<div id="results">
-  <ng-container *ngIf="movies">
-    <div *ngFor="let movie of movies">
-      <button [routerLink]="['/detail', movie.imdbID]">{{ movie.Title }} </button>
-    </div>
-  </ng-container>
+  <div id="results">
+    <ng-container class="container" *ngIf="movies">
+
+     <div class="cards" *ngFor="let movie of movies">
+      <a [routerLink]="['/detail', movie.imdbID]">
+        <img style="width:100px"
+        src={{movie.Poster}} />
+        <button class="btncard" [routerLink]="['/detail', movie.imdbID]">{{ movie.Title }}</button>
+        </a>
+      </div>
+    </ng-container>
+  </div>
 </div>
